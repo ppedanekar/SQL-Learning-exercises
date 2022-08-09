@@ -6,3 +6,8 @@
 SELECT *
 FROM customers
 ```
+
+```
+SELECT City
+FROM customers
+```
