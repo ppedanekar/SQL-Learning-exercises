@@ -1,2 +1,2 @@
 # SQL-Learning-exercises
-Learning SQL from basic to complex queries
+## Learning SQL from basic to complex queries
