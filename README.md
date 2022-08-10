@@ -55,3 +55,49 @@ AND PostalCode = 12209
  WHERE City = 'Berlin'
  OR City = 'London'
 ```
+
+### SQL ORDER BY
+
+*Select records ordered by a specific column*
+```
+SELECT * FROM Customers
+ORDER BY City
+```
+
+*Select records ordered in descending order
+```
+SELECT * FROM Customers
+ORDER BY City DESC
+```
+
+*Select records order by multiple columns
+```
+SELECT * FROM Customers
+ORDER BY Country, City
+```
+
+### SQL INSERT INTO
+
+*Insert a record in a table
+```
+INSERT INTO Customers (
+CustomerName, 
+Address, 
+City, 
+PostalCode,
+Country
+)
+VALUES (
+'Hekkan Burger',
+'Gateveien 15',
+'Sandnes',
+'4306',
+'Norway')
+```
+
+### SQL NULL
+
+```
+SELECT * FROM Customers
+WHERE PostaCode IS NULL
+```
