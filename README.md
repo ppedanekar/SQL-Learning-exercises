@@ -99,5 +99,5 @@ VALUES (
 
 ```
 SELECT * FROM Customers
-WHERE PostaCode IS NULL
+WHERE PostalCode IS NULL
 ```
