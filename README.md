@@ -97,7 +97,36 @@ VALUES (
 
 ### SQL NULL
 
+*Returns records that have "Null" as value
 ```
 SELECT * FROM Customers
 WHERE PostalCode IS NULL
+```
+
+*Returns records that do not have "Null" as value
+```
+SELECT * FROM Customers
+WHERE PostalCode IS not NULL
+```
+
+### SQL UPDATE
+
+*Updates records in a table
+```
+UPDATE Customers
+SET City = 'Oslo'
+```
+
+*Updates records in a table only where certain conditions are met
+```
+UPDATE Customers
+SET City = 'Oslo'
+WHERE Country = 'Norway'
+```
+
+*Updates records for multiple columns in a table only where certain conditions are met
+```
+UPDATE Customers
+SET City = 'Oslo', Country = 'Norway'
+WHERE CustomerID = 32
 ```
